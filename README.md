@@ -5,7 +5,7 @@ The Android application acts as a bridge, providing an interface to connect your
 
 The web server will communicate with the browser via Web Socket connection so as to send real-time heart rate and location values.
 
-The web client will be able to monitor those values as well as showing a graph with the latest heart rate samples. It will also allow the user to view the current location of the person being monitorised.
+The web client will be able to monitor those values as well as showing a graph with the latest heart rate samples. It will also allow the user to view the current location of the person being monitored.
 
 Notification system included to notifiy via email when certain heart rate conditions take place.
 
@@ -29,4 +29,5 @@ Full documentation is available together with LaTeX source (in spanish) under `/
 ![alt text](https://github.com/rauliyohmc/heart-rate-monitor-app/blob/master/doc/graphs/AndroidConectado.png)
 ![alt text](https://github.com/rauliyohmc/heart-rate-monitor-app/blob/master/doc/graphs/AndroidEmitiendo2.png)
 ![alt text](https://github.com/rauliyohmc/heart-rate-monitor-app/blob/master/doc/graphs/AndroidNotificaciones.png)
+![alt text](https://github.com/rauliyohmc/heart-rate-monitor-app/blob/master/doc/graphs/webDB.png)
 
