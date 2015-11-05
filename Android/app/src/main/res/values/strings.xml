@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="unknown_device">Dispositivo desconocido</string>
+    <string name="unknown_characteristic">Característica desconocida</string>
+    <string name="unknown_service">Servicio desconocido</string>
+    <string name="app_name">Monitor Cardiovascular</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Options</string>
+    <string name="menu_scan">Escanear</string>
+    <string name="menu_stop">Detener</string>
+    <string name="refresh">Refrescar</string>
+    <string name="title_activity_device">DeviceActivity</string>
+    <string name="label_state">Estado:</string>
+    <string name="label_device_address">Dirección MAC:</string>
+    <string name="connection_state">Desconectado</string>
+    <string name="label_data">Datos:</string>
+    <string name="no_data">No hay datos</string>
+    <string name="menu_connect">Conectar</string>
+    <string name="menu_disconnect">Desconectar</string>
+    <string name="disconnected">Desconectado</string>
+    <string name="connected">Conectado</string>
+
+</resources>

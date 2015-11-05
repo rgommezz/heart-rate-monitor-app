@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rauliyohmc.heartratemonitor.activity.DeviceActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item android:id="@+id/menu_connect"
+        android:title="@string/menu_connect"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_disconnect"
+        android:title="@string/menu_disconnect"
+        android:orderInCategory="101"
+        app:showAsAction="ifRoom|withText"/>
+</menu>
