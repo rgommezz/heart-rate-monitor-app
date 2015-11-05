@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<title>Monitor de Cardio</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
+		<link rel="stylesheet" href="../bower_components/nvd3/nv.d3.css">
+		<link rel="stylesheet" href="../bower_components/components-font-awesome/css/font-awesome.min.css">
+	</head>
+
+	<body ng-controller="heartRateMonitor.controller" ng-cloak style="overflow: hidden">
+		<div layout="column" layout-fill>
+		  	<md-toolbar>
+		    	<div class="md-toolbar-tools">
+		      		<span>Monitor Cardiovascular</span>
+		      	<!-- fill up the space between left and right area -->
+		      		<span flex></span>
+		      		<md-button ng-click="checkCurrentLocation()" ng-disabled="!geographicCoordinates">
+		        		Localización
+		      		</md-button>
+		    	</div>
+		  	</md-toolbar>
+		  	<md-content layout-padding layout-fill flex layout="column" style="padding-top: 24px">
+			  	<div class="heartRate-value" layout="row" layout-align="center center" layout-fill .md-display-1>
+			  		<span style="padding-right: 10px">{{currentDay}}</span>
+			  		<i class="fa fa-heart-o fa-2x" style="color: pink;" ng-show="disconnected"></i>
+						<i class="fa fa-heartbeat fa-2x" style="color: #E91E63;" ng-hide="disconnected"></i>
+						<span style="padding: 0px 10px 0px 10px; font-size: 24px;">{{value}}</span>
+			  	</div>
+			  	<nvd3 options="options" data="data" config="config" api="api"></nvd3>
+		  	</md-content>
+		</div>
+
+		<!--This sets the baseUrl to the "js" directory, and
+    	loads a script that will have a module ID of 'main'-->
+		<script type="text/javascript" src="../bower_components/requirejs/require.js" data-main="js/main.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,49 @@
+\chapterbeginx{Conclusiones y líneas de trabajo futuras}
+\label{chp:concl}
+\sectionx{Conclusiones}
+    
+    En este proyecto se ha investigado, planificado y desarrollado un sistema, presentado como una combinación de dos aplicaciones Android y web funcionando como un todo, cuyo objetivo es la monitorización de parámetros del sistema cardiovascular, en particular el ritmo cardíaco, todo ello buscando una conexión en tiempo real que presente el menor retardo posible.
+    
+    Durante el proyecto se han tenido en cuenta los conocimientos adquiridos durante el estudio de la titulación de Ingeniero de Telecomunicación, en particular aquellos relacionados con arquitectura de computadores y programación. Debido a que Comunicaciones fue la especialidad elegida en el último curso, se ha optado por usar e integrar uno de los protocolos de comunicaciones de última generación como es el protocolo Bluetooth 4.0, en concreto su modo de baja energía, una de las novedades que ha permitido la comercialización de millones de sensores de bajo coste y consumo.
+    
+    Uno de los mayores retos del proyecto ha sido las implementaciones de ambas aplicaciones Android y web. Durante la titulación no se han cursado asignaturas relativas a programación móvil, Java o programación web. Habiendo desarrollado algo de código Java por cuenta propia, el factor de mayor novedad y en el que más se ha aprendido durante la realización del proyecto es el componente web del mismo, gracias a la implementación del servidor, base de datos, y cliente web, es decir, todo el stack completo usando Javascript. Este valioso conjunto de conocimientos sienta las bases para, en un futuro, poder construir aplicaciones web de mayor complejidad técnica.
+    
+    La aplicación generada como resultado de este Proyecto Fin de Carrera, responde de manera satisfactoria a los objetivos autoimpuestos al principio del mismo, tal y como se ha demostrado en el capítulo de pruebas. Por tanto, al haber obtenido un producto funcional, se considera el proyecto como exitoso.
+    
+\sectionx{Líneas de trabajo futuras}
+    Durante el desarrollo del proyecto, y especialmente durante las pruebas finales del mismo, han surgido ideas y mejoras para el mismo, que son posibles de implementar en un futuro.
+     
+ \begin{description}
+	\item[Aplicación Android cliente de monitorización] \hfill \\	
+	Las aplicaciones como Facebook o Twitter presentan tanto versiones web como nativas para el sistema operativo Android. Los usuarios de teléfonos móviles descargan decenas de aplicaciones nativas y odian tener que abrir el navegador para acceder a una cierta aplicación, lo que les fuerza recordar la URL de la misma, accesos más lentos en caso de sobrecarga del servidor, etcétera. Mediante una aplicación Android cliente, mostraríamos la misma interfaz gráfica que presenta nuestra aplicación web, con la única diferencia que tenemos la aplicación nativa y fácilmente accesible, haciendo al cliente más feliz.
+	
+	\item[Guardar dispositivos preferidos]\hfill\\
+	Consecuentemente ahorrando batería en nuestro teléfono Android. De esta forma antes de volver a escanear, intentamos en primer lugar conectar directamente al dispositivo.
+	
+	\item[Extension de los servicios GATT ofrecidos al servidor web]\hfill\\
+	Dado que solo mandamos al servidor web datos de frecuencia cardíaca y localización, podríamos extender su funcionalidad mediante el envío de otras características GATT disponibles en el sensor, tales como la posición del sensor en el cuerpo, o mostrar el porcentaje de batería restante del sensor, para así prever con antelación un posible remplazo de la misma.
+	
+	\item[Reconocimiento de actividad]\hfill \\	
+	Android incorpora una API, conectada a los servicios de localización de Google, que permite estimar la actividad física realizada por el usuario con una probabilidad bastante alta. De esta forma podríamos mandar dicha información al servidor web para así ser capaces de monitorizar también la actividad actual del usuario y ver si este se encuentra corriendo, pedaleando una bicicleta, o sentado, entre otras muchas posibilidades.
+	
+	\item[Extensión a relojes con sistema operativo Android]\hfill\\
+	Con la reciente aparición de Android wear, podríamos desarrollar la aplicación compatible con este tipo de dispositivos, con lo cual la aplicación sería mucho más portable, al no depender de nuestro teléfono móvil. El hecho de que la aplicación funciona la mayoría del tiempo en segundo plano justifica la viabilidad de dicha extensión.
+	
+    \item[Inclusión de gráficas estadísticas]\hfill \\	
+    Mediante la consulta de valores de ritmo cardíaco almacenados en la base de datos, podríamos construir en nuestra aplicación web gráficas tales como históricos, evoluciones diarias, o en cualquier otro caso obtener valores mediante el procesado de dichos datos, tales como la frecuencia cardíaca media, intervalos RR, máximos y mínimos, etcétera, los cuales pueden ser de gran utilidad a analistas especializados.
+    
+    \item[Sistema de autentificación]\hfill \\
+    Se podrían crear perfiles personalizados para cada usuario individual, configurando parámetros como rango de valores peligrosos, o correo electrónico a notificar. Para ello dotaríamos a nuestra página web de un sistema de registro y autentificación, haciendo uso de la base de datos. De esta forma solo el personal autorizado tendría acceso a los datos y estadísticos oportunos proporcionando privacidad a los clientes, mediante el uso de las credenciales adecuadas (usuario y contraseña).
+    
+    \item[Exportación de archivos]\hfill\\
+    Posibilidad de exportar gráficas y estadísticos mediante el pulsado de un botón, facilitando el compartir los datos con otros analistas que puedan presentar interés en la información.
+    
+    
+\end{description}
+
+\begin{flushright}
+{\large \pfcauthorname}\nli
+\today
+\end{flushright}
+	
+\chapterend{}

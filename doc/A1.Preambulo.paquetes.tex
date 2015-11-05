@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:	Paquetes
+% Autor:  Ignacio Moreno Doblas
+% Fecha:  2014-02-01
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tabla de materias:
+%	1 Codificación e idioma %
+% 2 Matemáticas y Física %
+% 3 Gráficos%
+% 4 Estilo y formato%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%1 Codificación e idioma%
+\usepackage[utf8]{inputenc} %Codificación en latin-1%
+\usepackage[spanish]{babel}	%Hyphenation (Guionado) en español%
+\usepackage[T1]{fontenc} %Codificación de fuente%
+%\usepackage{eurofont} %Tipografía euro ()%
+
+%2 Matemáticas y Física %
+% Importante para ecuaciones, magnitudes y unidades%
+\usepackage{amssymb,amsmath,latexsym,amsfonts} % paquetes estándar%
+\usepackage[squaren]{SIunits} %Paquete para magnitudes y unidades físicas%
+\usepackage{ifthen} %sentencias if y while%
+
+%3 Gráficos%
+\usepackage{graphics,graphicx} %paquetes gráficos estándar%
+\usepackage{wrapfig} %paquete para gráfica lateral%
+\usepackage[rflt]{floatflt} %figuras flotantes%
+	% \begin{floatingfigure}[r]/[l]{4.5cm}
+	% \end{floatingfigure}
+\usepackage{graphpap}	%comando \graphpaper en el entorno picture%
+
+%4 Estilo y formato%
+\usepackage{placeins}
+\usepackage{fancyhdr}	%cabeceras y pies mejor que con \pagestyle{}%
+\usepackage{titlesec,titletoc} %Formateo de secciones y títulos%
+\raggedbottom %Para fragmentar versos en varias páginas%
+\usepackage{makeidx} %MakeIndex%
+%\usepackage{showidx} % Hace que cada comando \index se imprima en la página donde se ha puesto (útil para corregir los índices)
+\usepackage{alltt} % Define el environment alltt, como verbatim, excepto que \, { y } tienen su significado normal. Se describe en el fichero alltt.dtx.
+\usepackage[pdftex,bookmarksnumbered,hidelinks]{hyperref} %hyper-references%
+%\usepackage{minitoc} % Para poner tablas de contenido en cada capítulo.
+\usepackage{listings} % Para escribir piezas de código C, Python, etc. %
+%listings configuration
+\lstset{
+  language=Java, %Puede ser C, C++, Java, etc.
+  showstringspaces=false,
+  formfeed=\newpage,
+  tabsize=4,
+  commentstyle=\itshape,
+  basicstyle=\ttfamily,
+  morekeywords={models, lambda, forms}
+}
+
+\usepackage{mdframed}
+\usepackage{footnote}
+\usepackage{setspace}
+
+\usepackage{moreverb}
+
+%\usepackage{minted}
+\usepackage[chapter]{minted}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows}
+
+\tikzstyle{block} = [rectangle, draw, fill=gray!20, 
+    text width=5em, text centered, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+
+\newcommand{\codigofuente}{\inputminted[linenos,numberblanklines,breaklines,frame=lines]}
+%\newcommand{\codigfuente}{}
+
+\newcommand{\extractocodigo}{\minted[linenos,numberblanklines,breaklines,frame=lines]}
+%\newcommand{\codigfuente}{}
+
+\usepackage{tipa} % tipografía IPA (International Phonetic Alphabet)
+\usepackage{longtable} %Entorno Longtable, fracciona tablas a lo largo de páginas%
+\usepackage{colortbl}
+\usepackage{acronym}  %Para expandir automáticamente los acrónimos

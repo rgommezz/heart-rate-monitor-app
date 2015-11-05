@@ -1,0 +1,63 @@
+\BOOKMARK [-1][-]{part.1}{I Introducci\363n}{}% 1
+\BOOKMARK [0][-]{chapter*.6}{Presentaci\363n del Proyecto}{part.1}% 2
+\BOOKMARK [1][-]{figure.0.1}{Motivaci\363n}{chapter*.6}% 3
+\BOOKMARK [1][-]{figure.0.1}{Estado del arte}{chapter*.6}% 4
+\BOOKMARK [1][-]{table.0.2}{Herramientas y metodolog\355as utilizadas}{chapter*.6}% 5
+\BOOKMARK [1][-]{table.0.2}{Estructura del documento}{chapter*.6}% 6
+\BOOKMARK [-1][-]{part.2}{II Desarrollo del proyecto}{}% 7
+\BOOKMARK [0][-]{chapter.1}{1 Introducci\363n te\363rica}{part.2}% 8
+\BOOKMARK [1][-]{section.1.1}{1.1 Bluetooth}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Historia}{section.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Usos y aplicaciones }{section.1.1}% 11
+\BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 Especificaciones}{section.1.1}% 12
+\BOOKMARK [2][-]{subsection.1.1.4}{1.1.4 Arquitectura}{section.1.1}% 13
+\BOOKMARK [2][-]{subsection.1.1.5}{1.1.5 Bluetooth de baja energ\355a}{section.1.1}% 14
+\BOOKMARK [1][-]{section.1.2}{1.2 Android}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Interfaz}{section.1.2}% 16
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 Componentes de una aplicaci\363n}{section.1.2}% 17
+\BOOKMARK [2][-]{subsection.1.2.3}{1.2.3 Vistas}{section.1.2}% 18
+\BOOKMARK [2][-]{subsection.1.2.4}{1.2.4 Procesos e hilos de ejecuci\363n}{section.1.2}% 19
+\BOOKMARK [2][-]{subsection.1.2.5}{1.2.5 Ubicaci\363n}{section.1.2}% 20
+\BOOKMARK [2][-]{subsection.1.2.6}{1.2.6 BLE en Android}{section.1.2}% 21
+\BOOKMARK [1][-]{section.1.3}{1.3 Desarrollo de aplicaciones web modernas}{chapter.1}% 22
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Definiciones b\341sicas}{section.1.3}% 23
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 MEAN}{section.1.3}% 24
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 MongoDB}{section.1.3}% 25
+\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 Express}{section.1.3}% 26
+\BOOKMARK [2][-]{subsection.1.3.5}{1.3.5 AngularJS}{section.1.3}% 27
+\BOOKMARK [2][-]{subsection.1.3.6}{1.3.6 Node.js}{section.1.3}% 28
+\BOOKMARK [0][-]{chapter.2}{2 Implementaci\363n}{part.2}% 29
+\BOOKMARK [1][-]{section.2.1}{2.1 An\341lisis de requisitos}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Requisitos funcionales}{section.2.1}% 31
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Requisitos no funcionales}{section.2.1}% 32
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Dise\361o de la interfaz gr\341fica}{section.2.1}% 33
+\BOOKMARK [2][-]{subsection.2.1.4}{2.1.4 Dispositivo Android}{section.2.1}% 34
+\BOOKMARK [1][-]{section.2.2}{2.2 Aplicaci\363n Android}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Entorno de desarrollo integrado}{section.2.2}% 36
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Estructura del c\363digo}{section.2.2}% 37
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Interfaz gr\341fica}{section.2.2}% 38
+\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Diagrama de flujo}{section.2.2}% 39
+\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Comunicaci\363n con el sensor mediante BLE}{section.2.2}% 40
+\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Ubicaci\363n}{section.2.2}% 41
+\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Comunicaci\363n con el servidor web}{section.2.2}% 42
+\BOOKMARK [1][-]{section.2.3}{2.3 Aplicaci\363n web}{chapter.2}% 43
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Entorno de desarrollo integrado}{section.2.3}% 44
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Estructura del c\363digo}{section.2.3}% 45
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Diagrama de flujo}{section.2.3}% 46
+\BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 Servidor}{section.2.3}% 47
+\BOOKMARK [2][-]{subsection.2.3.5}{2.3.5 Cliente}{section.2.3}% 48
+\BOOKMARK [0][-]{chapter.3}{3 Plan de pruebas y verificaci\363n}{part.2}% 49
+\BOOKMARK [1][-]{section.3.1}{3.1 Funcionamiento de la aplicaci\363n}{chapter.3}% 50
+\BOOKMARK [1][-]{section.3.2}{3.2 Pruebas realizadas}{chapter.3}% 51
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Comparaci\363n con electrocardiograma}{section.3.2}% 52
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Consumo de energ\355a}{section.3.2}% 53
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Retardo del sistema}{section.3.2}% 54
+\BOOKMARK [1][-]{section.3.3}{3.3 Realizaci\363n de los objetivos}{chapter.3}% 55
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Aplicaci\363n Android}{section.3.3}% 56
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Aplicaci\363n web}{section.3.3}% 57
+\BOOKMARK [-1][-]{part.3}{III Conclusiones y l\355neas futuras}{}% 58
+\BOOKMARK [0][-]{chapter*.89}{Conclusiones}{part.3}% 59
+\BOOKMARK [1][-]{section*.90}{L\355neas de trabajo futuras}{chapter*.89}% 60
+\BOOKMARK [-1][-]{part.4}{IV Ap\351ndices}{}% 61
+\BOOKMARK [0][-]{appendix.Alph1}{A Proceso de integraci\363n de una aplicaci\363n node.js en Heroku}{part.4}% 62
+\BOOKMARK [0][-]{appendix*.91}{Referencias}{part.4}% 63

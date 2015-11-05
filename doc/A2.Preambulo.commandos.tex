@@ -1,0 +1,172 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:	Comandos
+% Autor:  Ignacio Moreno Doblas
+% Fecha:  2014-02-01
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tabla de materias:
+% 1 Información del Documento %
+% 2 Comandos a nivel de texto %
+% 3 Comandos a nivel de entorno %
+% 4 Comandos a nivel de página y sección %
+% 5 Otros comandos %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 1 Información del Documento %
+\newcommand{\pfctitlename}{Título del Proyecto fin de Carrera}
+\newcommand{\pfcauthorname}{Nombre del autor}
+\newcommand{\pfctutorname}{Nombre del tutor}
+\newcommand{\pfcanno}{año de publicación}
+
+% 2 Comandos a nivel de texto %
+\newcommand{\R}{\textsuperscript{\textregistered}}	%Símbolo registrado%
+\newcommand{\C}{\textsuperscript{\copyright}}	%Símbolo Copyright%
+\newcommand{\TM}{\texttrademark} %Símbolo Trade Mark (marca comercial)%
+
+% 2.1 Comandos abreviatura %
+\newcommand{\tit}{\textit} %Fuente cursiva (itálica)%
+\newcommand{\tbf}{\textbf} %Fuente negrita%
+\newcommand{\ttw}[1]{\texttt{#1}} %Fuente máquina de escribir (typewriter)%
+%Combinación%
+\newcommand{\textittt}[1]{\textit{\texttt{#1}}} %itálica y typewriter%
+\newcommand{\textittw}{\textittt} % Otra forma de escribirlo.
+\newcommand{\tittw}{\textittw} %Shortened%
+\newcommand{\tbftw}[1]{\tbf{\ttw{#1}}}
+
+%Crea una nueva línea y la indenta sin crear interlineado extra.
+\newcommand{\nli}{\\ \indent} 
+
+%Para escribir un correo electrónico%
+\newcommand{\mailto}[1]{\href{mailto:#1}{#1}}
+
+% Si vas a hacer un uso básico de \index (entradas en el índice de sólo un nivel, sin formatos especiales, etc.), define la orden
+\newcommand{\miindex}[1]{#1\index{#1}}
+
+\newcommand{\hs}{\hspace} % Abreviatura espacio horizontal
+\newcommand{\vs}{\vspace} % Abreviatura espacio vertical
+
+% Abreviaturas para los conjuntos de números más comunes.
+\newcommand{\realnumbers}{\mathbb R}
+\newcommand{\naturalnumbers}{\mathbb N}
+\newcommand{\integernumbers}{\mathbb Z}
+\newcommand{\rationalnumbers}{\mathbb Q}
+\newcommand{\complexnumbers}{\mathbb R}
+\newcommand{\irrationalnumbers}{\mathbb I}
+
+% Doble barra sobre una letra (para expresar las matrices).
+\newcommand{\doublebar}[1]{\bar{\bar{#1}}} 
+% Ej: \vector(y) = \doublebar(A) \vector(x) (Stma. lineal de ec.)
+
+% 3 Comandos a nivel de entorno %
+\newcommand{\benu}{\begin{enu}} % Begin enumerate
+\newcommand{\eenu}{\end{enu}} 	% End enumeration
+
+%Comando para escribir código Python
+\newcommand{\code}[3]{
+  %\hrulefill
+  %\subsection*{#1}
+  %\subsubsection{#1}
+  \lstinputlisting{#2}
+  %#1\\
+  \begin{table}[h!]
+  	\centering
+  	\caption{#1}
+  	\label{#3}
+  \end{table}
+  \vspace{2em}
+}
+
+% 4 Comandos a nivel de página y sección %
+%Crea página en blanco
+\newcommand{\blankpage}{\clearpage{\pagestyle{empty}\cleardoublepage}}
+
+% Versión x del comando section: sin numeración pero sí aparece en la tabla de contenidos.
+\newcommand{\sectionx}[1]{
+	\section*{#1}
+	\addcontentsline{toc}{section}{#1}
+}
+
+% Versión y del comando section: sin numeración y NO aparece en la tabla de contenidos.
+\newcommand{\sectiony}[1]{
+	\section*{#1}
+}
+
+% Versión x del comando chapter: sin numeración pero sí  aparece en la tabla de contenidos.
+\newcommand{\chapterx}[1]{
+	\chapter*{#1}
+	%\addcontentsline{toc}{chapter}{#1} %Caused by minitoc package%
+	%\addstarredchapter{#1} %For minitoc package%
+}
+
+% substituto del comando \chapter: incluye estilo de página.
+\newcommand{\chapterbegin}[1]%
+	{%
+		\pagestyle{fancy}
+		\fancyhead[LE,RO]{\thepage}
+		\fancyhead[LO]{Capítulo \thechapter. #1}
+		%\fancyhead[RE]{Parte \thepart \rightmark} %
+		\fancyhead[RE]{\nouppercase{\rightmark}} %
+				
+		\chapter{#1}
+	}
+
+% Versión x del comando \chapterbegin: sin numeración y aparece en la tabla de contenidos.
+\newcommand{\chapterbeginx}[1]%
+	{%
+		\pagestyle{fancy}
+		\fancyhead[RO,LE]{\thepage}
+		\fancyhead[RE,LO]{#1}
+		%\fancyhead[LO]{Chapter \thechapter}
+		%\fancyhead[RE]{Part \thepart} %
+		
+		\chapterx{#1}
+	}
+
+%Fin de capítulo
+\newcommand{\chapterend}{\pagestyle{empty}\cleardoublepage \thispagestyle{empty}}
+%Si fuera un artículo en lugar un libro, \clearpage en lugar de \cleardoublepage
+
+% 5 Otros comandos %
+%\let\Oldpart\part
+%\newcommand{\parttitle}{}
+%\renewcommand{part}[1]{\Oldpart{#1}\renewcommand{\parttitle}{#1}} %Header customization%
+
+%Cambiar el título índice de capítulo a ``Contenido''.
+%\renewcommand{\mtctitle}{Contenido}
+
+%\dominitoc % Para tablas de contenidos por capítulo.
+
+\addto{\captionsspanish}{
+	\renewcommand{\listtablename}{Índice de Tablas}
+	\renewcommand{\tablename}{Tabla} } % Por ejemplo, modificar el nombre de 'Cuadro' a 'Tabla'.
+
+\addto{\captionsspanish}{
+	\renewcommand{\contentsname}{Índice} }
+	
+	\addto{\captionsspanish}{
+	\renewcommand{\listingscaption}{Fragmento de código}}
+	
+	\addto{\captionsspanish}{
+	\renewcommand{\listoflistingscaption}{Índice de fragmentos de código}}
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+  
+  \newcommand{\exedout}{%
+  \rule{0.8\textwidth}{0.5\textwidth}%
+}
+%Si se desea cambiar el tipo de letra a Arial
+% por cualquier razón, descomentar las siguientes
+% dos líneas
+%\renewcommand{\rmdefault}{phv} % Arial
+%\renewcommand{\sfdefault}{phv} % Arial
+	
+%\addto{\captionsspanish}{
+%	\renewcommand{\partname}{Fase} }
+
+%\addto{\captionsspanish}{%
+%    \renewcommand{\refname}{\vspace{-4.5ex}}} % Para que no aparezca el texto 'referencias' en la bibliografía.
+
+% Modifica el interlineado
+\renewcommand{\baselinestretch}{1.5}

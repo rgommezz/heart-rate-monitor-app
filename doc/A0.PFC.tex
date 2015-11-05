@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:	Plantilla de PFC/TFG/TFM
+% Autor:  Ignacio Moreno Doblas
+% Fecha:  2014-02-01
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compilador: 	MiKTeX 2.9.
+%	Modo:					PDFLaTeX.
+% Entorno:			TeXnicCenter 2.0 Stable Beta 2.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Preámbulo del documento.
+%-----------------------------------------------------------------%
+% Clase de documento: libro
+\documentclass[12pt,a4paper]{book} % article, report, book.
+
+% Preámbulo: paquetes, comandos, entornos, estilos y título de página.
+\input{A1.Preambulo.paquetes.tex}
+\input{A2.Preambulo.commandos.tex}
+\input{A3.Preambulo.entornos.tex}
+\input{A4.Preambulo.estilodepagina.tex}
+
+%\interfootnotelinepenalty=10000
+
+%Comando para crear glosario (index en inglés)
+\makeindex
+
+
+% Document body.
+%-------------------------------------------------------------------%
+\begin{document}
+% Formato de documento hasta el capítulo 1 (sin incluirlo)
+\frontmatter
+
+%% Título y autor del proyecto
+%%Rellenar con el nombre real del autor, título, tutor y año.
+%%El departamento del tutor se escribe una vez en el Resumen del PFC
+\renewcommand{\pfcauthorname}{Raúl Gómez Acuña}
+\renewcommand{\pfctitlename}{SISTEMA DE MONITORIZACIÓN WEB DEL SISTEMA CARDIOVASCULAR MEDIANTE EL USO DEL PROTOCOLO BLUETOOTH 4.0 DE BAJA ENERGÍA}%
+\renewcommand{\pfctutorname}{Álvaro Durán Martínez}
+\renewcommand{\pfcanno}{2015}
+
+% Los tres ficheros siguientes solamente deben descomentarse
+%  en el caso de ser un PFC del plan a extinguir.
+% En los nuevos títulos de grado, no exiten la portada, la calificación 
+%  ni el Resumen del PFC.
+% Estos tres documentos deben tomarse de la web de la ETSIT.
+%
+% Portada.
+\input{B1.Portada.tex}
+
+% Hoja de calificación
+\input{B2.Calificacion.tex}
+
+% Resumen del proyecto (formulario)
+\input{B3.ResumenPFC.tex}
+
+% Dedicatoria.
+\input{B4.Dedicatoria.tex}
+
+% Acrónimos
+\input{B5.Acronimos.tex}
+
+% Tabla de contenidos, figuras y tablas.
+\input{B5.TableOfContents.tex}
+\input{B5.TableOfFigures.tex}
+\input{B5.TableOfCode.tex}
+\input{B5.TableOfTables.tex}
+
+% Formato de documento durante los capítulos.
+\mainmatter
+
+% Prólogo.
+%\input{B6.Prologo.tex}
+
+% Parte I. Introducción
+\part{Introducción}
+
+% Introducción y objetivo
+\input{B7.Intro.tex}
+
+
+\part{Desarrollo del proyecto}
+
+% Capítulo 01.
+\input{Capitulo01.tex}
+
+% Capítulo 02.
+\input{Capitulo02.tex}
+
+% Capítulo 03.
+\input{Capitulo03.tex}
+
+\part{Conclusiones y líneas futuras}
+\input{D0.Conclusiones.tex}
+
+% Anexos
+\part{Apéndices}
+
+\appendix
+
+\input{D1.AppendixA.tex}
+
+%\input{D2.AppendixB.tex}
+
+%\input{D3.AppendixC.tex}
+
+% Formato de documento en la parte final.
+\backmatter
+%Hace que los capítulos y títulos nivel inferior no aparezcan numerados (lo que es ideal para conclusiones o notas finales).
+
+% Bibliografía
+\input{E1.Bibliografia.tex}
+
+% Índice alfabético%
+%\input{F1.Index.tex}
+
+\end{document}

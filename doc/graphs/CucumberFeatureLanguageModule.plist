@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>BBLMCanSpellCheckCodeRuns</key>
+  <true/>
+  <key>BBEditDocumentType</key>
+  <string>CodelessLanguageModule</string>
+  <key>BBLMLanguageDisplayName</key>
+  <string>Cucumber Feature</string>
+  <key>BBLMLanguageCode</key>
+  <string>Cuke</string>
+  <key>BBLMColorsSyntax</key>
+  <true/>
+  <key>BBLMScansFunctions</key>
+  <true/>
+  <key>BBLMIsCaseSensitive</key>
+  <true/>
+  <key>BBLMReferenceSearchURLTemplate</key>
+  <string>http://wiki.github.com/aslakhellesoy/cucumber/__SYMBOLNAME__</string>
+  <key>BBLMKeywordList</key>
+  <array>
+    <string>Feature</string>
+    <string>Background</string>
+    <string>Scenario</string>
+    <string>Outline</string>
+    <string>Examples</string>
+    <string>Given</string>
+    <string>When</string>
+    <string>Then</string>
+    <string>And</string>
+    <string>But</string>
+
+    <string>Funcionalidade</string>
+    <string>Contexto</string>
+    <string>Cenario</string>
+    <string>Esquema do Cenario</string>
+    <string>Exemplos</string>
+    <string>Dado</string>
+    <string>Quando</string>
+    <string>Entao</string>
+    <string>E</string>
+    <string>Mas</string>
+  </array>
+  <key>BBLMSuffixMap</key>
+  <array>
+    <dict>
+      <key>BBLMLanguageSuffix</key>
+      <string>.feature</string>
+    </dict>
+  </array>
+  <key>Language Features</key>
+  <dict>
+    <key>Comment Pattern</key>
+    <string>(?x:
+    (?&gt;  [\#]       .*          $            )
+)</string>
+    <key>Function Pattern</key>
+    <string>(?x:
+      ^[ \\t]*
+      (?P&lt;function&gt;
+        (Scenario( Outline)?|Background):[ ]*
+        (?P&lt;function_name&gt;
+          (.*)
+        )
+      )
+    )</string>
+    <key>Identifier and Keyword Character Class</key>
+    <string>A-Za-z</string>
+    <key>Skip Pattern</key>
+    <string></string>
+    <key>String Pattern</key>
+    <string>(?x:
+      (?&gt;  &quot;  (?s: \\. | [^&quot;] )*?  (?: &quot; | $) ) |
+      (?&gt;  &apos;  (?s: \\. | [^&apos;] )*?  (?: &apos; | $) ) 
+  )</string>
+  </dict>
+  <key>BBLMVersion</key>
+  <string>1.0</string>
+  <key>BBLMAuthor</key>
+  <string>Grant Neufeld</string>
+  <key>BBLMURL</key>
+  <string>http://github.com/grantneufeld/</string>
+</dict>
+</plist>

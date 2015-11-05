@@ -1,0 +1,56 @@
+\select@language {spanish}
+\contentsline {figure}{\numberline {1}{\ignorespaces Sistema de monitorizaci\IeC {\'o}n del ritmo card\IeC {\'\i }aco (visi\IeC {\'o}n general)}}{5}{figure.0.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Origen del logotipo comercial de Bluetooth \cite {bluetoothoficial}}}{12}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Arquitectura de Hardware del protocolo Bluetooth \cite {codificacion}}}{18}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Arquitectura de Software del protocolo Bluetooth \cite {codificacion}}}{20}{figure.1.3}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Capa F\IeC {\'\i }sica BLE \cite {bluetoothlowenergy}}}{22}{figure.1.4}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Diagrama de la estructura del sistema operativo Android\cite {androiddevguide} }}{25}{figure.1.5}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Notificaciones minimizadas en el \IeC {\'a}rea de notificaciones\cite {androiddevguide} }}{26}{figure.1.6}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Diagrama del ciclo de vida de una actividad en Android \cite {androiddevguide}.}}{29}{figure.1.7}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Diagrama del ciclo de vida de un servicio \cite {androiddevguide}}}{32}{figure.1.8}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Esquema Servidor y Cliente GATT \cite {androiddevguide}}}{39}{figure.1.9}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Ejemplo de directivas AngularJS incrustadas en HTML \cite {penflip}}}{47}{figure.1.10}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Sistema de eventos en NodeJS \cite {nodejs}}}{49}{figure.1.11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Bosquejo Android estado Reposo}}{55}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Bosquejo Android estado B\IeC {\'u}squeda}}{55}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Bosquejo Android estado Desconectado}}{56}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Bosquejo Android estado Conectado}}{56}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Bosquejo web con sensor desconectado}}{58}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Bosquejo web con sensor conectado}}{59}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Entorno de desarrollo integrado Android Studio}}{60}{figure.2.7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Entorno de desarrollo integrado Eclipse}}{61}{figure.2.8}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Organizaci\IeC {\'o}n del c\IeC {\'o}digo fuente}}{63}{figure.2.9}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Editor de archivos de recurso XML con vista previa}}{64}{figure.2.10}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Edici\IeC {\'o}n completamente visual de la interfaz gr\IeC {\'a}fica de usuario de la aplicaci\IeC {\'o}n}}{65}{figure.2.11}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Barra de Acci\IeC {\'o}n en la actividad principal \texttt {MainActivity}}}{67}{figure.2.12}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Diagrama de flujo de la aplicaci\IeC {\'o}n Android}}{68}{figure.2.13}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Arquitectura de Bluetooth en Android \cite {bluetoothhal}}}{70}{figure.2.14}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Diagrama de interacci\IeC {\'o}n de la aplicaci\IeC {\'o}n y los servicios}}{77}{figure.2.15}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Entorno de desarrollo Atom}}{81}{figure.2.16}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Estructura global de la aplicaci\IeC {\'o}n web}}{82}{figure.2.17}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Diagrama de flujo del servidor web}}{84}{figure.2.18}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces \IeC {\'A}rbol de dependencias en la aplicaci\IeC {\'o}n Angular}}{96}{figure.2.19}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Pantalla inicial}}{102}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Dispositivos encontrados}}{102}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Conexi\IeC {\'o}n GATT sin establecer}}{103}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Conexi\IeC {\'o}n GATT establecida}}{103}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Cliente web cuando el puls\IeC {\'o}metro est\IeC {\'a} desconectado}}{104}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Cliente web cuando el puls\IeC {\'o}metro est\IeC {\'a} conectado}}{105}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Notificaci\IeC {\'o}n por valor fuera de rango}}{106}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Notificaci\IeC {\'o}n de estabilizaci\IeC {\'o}n}}{106}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Cliente web en un dispositivo m\IeC {\'o}vil}}{107}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Ubicaci\IeC {\'o}n del usuario en el servicio de mapas de Google}}{107}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Servicio de almacenamiento MongoLab en la nube}}{108}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Sigma R1 Blue Comfortex+}}{109}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Captura del sistema en funcionamiento}}{112}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Resumen de las pruebas realizadas}}{114}{figure.3.14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Autentificaci\IeC {\'o}n en el terminal en Heroku \cite {heroku}}}{128}{figure.Alph1.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Preparando a Heroku para crear la aplicaci\IeC {\'o}n \cite {heroku}}}{129}{figure.Alph1.2}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Consulta de logs de nuestra aplicaci\IeC {\'o}n \cite {heroku}}}{129}{figure.Alph1.4}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Enviando el c\IeC {\'o}digo fuente a Heroku \cite {heroku}}}{130}{figure.Alph1.3}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Apariencia del dashboard en Heroku \cite {heroku}}}{131}{figure.Alph1.5}
+\contentsfinish 

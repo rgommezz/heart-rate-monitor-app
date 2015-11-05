@@ -1,0 +1,118 @@
+\select@language {spanish}
+\contentsline {part}{I\hspace {1em}Introducci\IeC {\'o}n}{1}{part.1}
+\contentsline {section}{Presentaci\IeC {\'o}n del Proyecto}{3}{chapter*.6}
+\contentsline {section}{Motivaci\IeC {\'o}n}{4}{figure.0.1}
+\contentsline {section}{Estado del arte}{6}{figure.0.1}
+\contentsline {section}{Herramientas y metodolog\IeC {\'\i }as utilizadas}{7}{table.0.2}
+\contentsline {section}{Estructura del documento}{8}{table.0.2}
+\contentsline {part}{II\hspace {1em}Desarrollo del proyecto}{9}{part.2}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n te\IeC {\'o}rica}{11}{chapter.1}
+\contentsline {section}{\numberline {1.1}Bluetooth}{11}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Historia}{11}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Usos y aplicaciones }{12}{subsection.1.1.2}
+\contentsline {subsubsection}{Aplicaciones}{14}{subsubsection*.8}
+\contentsline {subsection}{\numberline {1.1.3}Especificaciones}{14}{subsection.1.1.3}
+\contentsline {subsubsection}{La tecnolog\IeC {\'\i }a}{14}{subsubsection*.9}
+\contentsline {subsubsection}{Versiones}{16}{subsubsection*.13}
+\contentsline {subsection}{\numberline {1.1.4}Arquitectura}{18}{subsection.1.1.4}
+\contentsline {subsubsection}{Arquitectura de Hardware}{18}{subsubsection*.18}
+\contentsline {subsubsection}{Arquitectura de Software}{19}{subsubsection*.19}
+\contentsline {subsection}{\numberline {1.1.5}Bluetooth de baja energ\IeC {\'\i }a}{19}{subsection.1.1.5}
+\contentsline {subsubsection}{Comparaci\IeC {\'o}n con otros protocolos}{21}{subsubsection*.20}
+\contentsline {subsubsection}{Capa f\IeC {\'\i }sica BLE}{22}{subsubsection*.21}
+\contentsline {subsubsection}{Capa de Enlace de Datos}{23}{subsubsection*.22}
+\contentsline {section}{\numberline {1.2}Android}{24}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Interfaz}{26}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Componentes de una aplicaci\IeC {\'o}n}{27}{subsection.1.2.2}
+\contentsline {subsubsection}{Contexto}{27}{subsubsection*.23}
+\contentsline {subsubsection}{Actividades}{27}{subsubsection*.24}
+\contentsline {subsubsection}{Ciclo de vida de una actividad}{28}{subsubsection*.25}
+\contentsline {subsubsection}{Servicios}{30}{subsubsection*.26}
+\contentsline {subsection}{\numberline {1.2.3}Vistas}{32}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Procesos e hilos de ejecuci\IeC {\'o}n}{33}{subsection.1.2.4}
+\contentsline {subsubsection}{Procesos}{33}{subsubsection*.27}
+\contentsline {subsubsection}{Hilos de ejecuci\IeC {\'o}n}{34}{subsubsection*.28}
+\contentsline {subsection}{\numberline {1.2.5}Ubicaci\IeC {\'o}n}{35}{subsection.1.2.5}
+\contentsline {subsubsection}{GPS}{35}{subsubsection*.29}
+\contentsline {subsubsection}{Servicios M\IeC {\'o}viles de Google}{36}{subsubsection*.31}
+\contentsline {subsection}{\numberline {1.2.6}BLE en Android}{36}{subsection.1.2.6}
+\contentsline {subsubsection}{Conceptos y Terminolog\IeC {\'\i }a clave}{36}{subsubsection*.33}
+\contentsline {subsubsection}{Roles y Responsabilidades}{38}{subsubsection*.37}
+\contentsline {section}{\numberline {1.3}Desarrollo de aplicaciones web modernas}{39}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Definiciones b\IeC {\'a}sicas}{39}{subsection.1.3.1}
+\contentsline {subsubsection}{Frontend}{39}{subsubsection*.38}
+\contentsline {subsubsection}{Backend}{40}{subsubsection*.41}
+\contentsline {subsubsection}{Stack}{41}{subsubsection*.42}
+\contentsline {subsubsection}{DOM}{41}{subsubsection*.43}
+\contentsline {subsubsection}{Web Socket}{41}{subsubsection*.45}
+\contentsline {subsection}{\numberline {1.3.2}MEAN}{42}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}MongoDB}{43}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Express}{44}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}AngularJS}{45}{subsection.1.3.5}
+\contentsline {subsection}{\numberline {1.3.6}Node.js}{47}{subsection.1.3.6}
+\contentsline {subsubsection}{\IeC {\textquestiondown }Qu\IeC {\'e} problema resuelve Node?}{47}{subsubsection*.48}
+\contentsline {subsubsection}{Funcionamiento}{48}{subsubsection*.50}
+\contentsline {subsubsection}{Programaci\IeC {\'o}n orientada a eventos}{49}{subsubsection*.51}
+\contentsline {subsubsection}{M\IeC {\'o}dulos Node}{50}{subsubsection*.52}
+\contentsline {chapter}{\numberline {2}Implementaci\IeC {\'o}n}{51}{chapter.2}
+\contentsline {section}{\numberline {2.1}An\IeC {\'a}lisis de requisitos}{51}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Requisitos funcionales}{51}{subsection.2.1.1}
+\contentsline {subsubsection}{Aplicaci\IeC {\'o}n Android}{51}{subsubsection*.53}
+\contentsline {subsubsection}{Aplicaci\IeC {\'o}n Web}{52}{subsubsection*.55}
+\contentsline {subsection}{\numberline {2.1.2}Requisitos no funcionales}{54}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Dise\IeC {\~n}o de la interfaz gr\IeC {\'a}fica}{54}{subsection.2.1.3}
+\contentsline {subsubsection}{Android}{55}{subsubsection*.56}
+\contentsline {subsubsection}{Web}{57}{subsubsection*.57}
+\contentsline {subsection}{\numberline {2.1.4}Dispositivo Android}{58}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Aplicaci\IeC {\'o}n Android}{59}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Entorno de desarrollo integrado}{59}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Estructura del c\IeC {\'o}digo}{62}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Interfaz gr\IeC {\'a}fica}{63}{subsection.2.2.3}
+\contentsline {subsubsection}{Men\IeC {\'u}s y barra de acci\IeC {\'o}n}{67}{subsubsection*.61}
+\contentsline {subsection}{\numberline {2.2.4}Diagrama de flujo}{67}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Comunicaci\IeC {\'o}n con el sensor mediante BLE}{69}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Ubicaci\IeC {\'o}n}{76}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Comunicaci\IeC {\'o}n con el servidor web}{78}{subsection.2.2.7}
+\contentsline {section}{\numberline {2.3}Aplicaci\IeC {\'o}n web}{80}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Entorno de desarrollo integrado}{80}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Estructura del c\IeC {\'o}digo}{81}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Diagrama de flujo}{83}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Servidor}{85}{subsection.2.3.4}
+\contentsline {subsubsection}{Base de datos}{87}{subsubsection*.65}
+\contentsline {subsubsection}{Notificaciones}{88}{subsubsection*.66}
+\contentsline {subsection}{\numberline {2.3.5}Cliente}{90}{subsection.2.3.5}
+\contentsline {subsubsection}{Directivas en Angular}{90}{subsubsection*.68}
+\contentsline {subsubsection}{\IeC {\textquestiondown }C\IeC {\'o}mo arranca Angular?}{91}{subsubsection*.69}
+\contentsline {subsubsection}{M\IeC {\'o}dulos}{91}{subsubsection*.70}
+\contentsline {subsubsection}{\IeC {\'A}mbitos}{91}{subsubsection*.71}
+\contentsline {subsubsection}{Controladores}{93}{subsubsection*.72}
+\contentsline {subsubsection}{Angular y RequireJS}{94}{subsubsection*.73}
+\contentsline {subsubsection}{Vista}{97}{subsubsection*.76}
+\contentsline {subsubsection}{Controlador y modelo}{99}{subsubsection*.77}
+\contentsline {chapter}{\numberline {3}Plan de pruebas y verificaci\IeC {\'o}n}{101}{chapter.3}
+\contentsline {section}{\numberline {3.1}Funcionamiento de la aplicaci\IeC {\'o}n}{101}{section.3.1}
+\contentsline {section}{\numberline {3.2}Pruebas realizadas}{108}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Comparaci\IeC {\'o}n con electrocardiograma}{108}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Consumo de energ\IeC {\'\i }a}{111}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Retardo del sistema}{111}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Realizaci\IeC {\'o}n de los objetivos}{113}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Aplicaci\IeC {\'o}n Android}{113}{subsection.3.3.1}
+\contentsline {subsubsection}{Capacidad de detectar sensores BLE pr\IeC {\'o}ximos al dispositivo}{113}{subsubsection*.78}
+\contentsline {subsubsection}{Capacidad de conectarse a cualquier sensor BLE registrado}{113}{subsubsection*.79}
+\contentsline {subsubsection}{Capacidad de leer caracter\IeC {\'\i }sticas GATT ofrecidas por el sensor}{114}{subsubsection*.80}
+\contentsline {subsubsection}{Capacidad de enviar los par\IeC {\'a}metros relevantes a trav\IeC {\'e}s del protocolo HTTP a nuestro servidor web}{115}{subsubsection*.81}
+\contentsline {subsection}{\numberline {3.3.2}Aplicaci\IeC {\'o}n web}{115}{subsection.3.3.2}
+\contentsline {subsubsection}{Capacidad de determinar si el sensor est\IeC {\'a} conectado al sistema}{115}{subsubsection*.82}
+\contentsline {subsubsection}{Capacidad de mostrar la frecuencia card\IeC {\'\i }aca actual en tiempo real}{115}{subsubsection*.83}
+\contentsline {subsubsection}{Capacidad de mostrar la evoluci\IeC {\'o}n de la frecuencia card\IeC {\'\i }aca mediante el uso de una gr\IeC {\'a}fica din\IeC {\'a}mica}{115}{subsubsection*.84}
+\contentsline {subsubsection}{Capacidad de guardar los datos de frecuencia card\IeC {\'\i }aca en una base de datos}{116}{subsubsection*.85}
+\contentsline {subsubsection}{Capacidad de determinar la posici\IeC {\'o}n del usuario usando el servicio de mapas de Google}{116}{subsubsection*.86}
+\contentsline {subsubsection}{Capacidad de notificar por e-mail a un grupo de usuarios interesados en realizar tareas de monitorizaci\IeC {\'o}n}{116}{subsubsection*.87}
+\contentsline {subsubsection}{Capacidad de adaptarse f\IeC {\'a}cilmente a pantallas m\IeC {\'a}s peque\IeC {\~n}as, tales como tel\IeC {\'e}fonos m\IeC {\'o}viles y tabletas}{117}{subsubsection*.88}
+\contentsline {part}{III\hspace {1em}Conclusiones y l\IeC {\'\i }neas futuras}{119}{part.3}
+\contentsline {section}{Conclusiones}{121}{chapter*.89}
+\contentsline {section}{L\IeC {\'\i }neas de trabajo futuras}{122}{section*.90}
+\contentsline {part}{IV\hspace {1em}Ap\IeC {\'e}ndices}{125}{part.4}
+\contentsline {chapter}{\numberline {A}Proceso de integraci\IeC {\'o}n de una aplicaci\IeC {\'o}n node.js en Heroku}{127}{appendix.Alph1}
+\contentsline {chapter}{Referencias}{135}{appendix*.91}
+\contentsfinish 

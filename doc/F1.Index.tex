@@ -1,0 +1,33 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:		Glosario (index)
+% Autor:  	Ignacio Moreno Doblas
+% Fecha:  	2014-02-01
+% Versión:	0.5.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{Índice Alfabético}
+%\fancyhead[RE]{Parte \thepart \rightmark} %
+\fancyhead[RE]{\nouppercase{\rightmark}} %
+
+%index of contents
+\phantomsection
+\addcontentsline{toc}{chapter}{Índice alfabético}
+\printindex
+
+
+%Example 	Index Entry 	Comment
+%\index{hello} 	hello, 1 	Plain entry
+%\index{hello!Peter} 	  Peter, 3 	Subentry under 'hello'
+%\index{Sam@\textsl{Sam}} 	Sam, 2 	Formatted entry
+%\index{Lin@\textbf{Lin}} 	Lin, 7 	Same as above
+%\index{Jenny|textbf} 	Jenny, 3 	Formatted page number
+%\index{Joe|textit} 	Joe, 5 	Same as above
+%\index{ecole@\'ecole} 	école, 4 	Handling of accents
+%\index{Peter|see{hello}} 	Peter, see hello 	Cross-references
+%\index{Jen|seealso{Jenny}} 	Jen, see also Jenny 	Same as above
+
+\chapterend

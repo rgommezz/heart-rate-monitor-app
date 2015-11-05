@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:		Introducción
+% Autor:  	Ignacio Moreno Doblas
+% Fecha:  	2014-02-01
+% Versión:	0.5.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\chapterbeginx{Introducción, Objetivo y Visión general}
+\chapterbeginx{Introducción y visión general}
+%\minitoc
+
+\sectionx{Presentación del Proyecto}
+\label{sec:intro:obj}
+	Este proyecto es fundamentalmente una prueba de concepto. Para los desconocidos del término podemos resumir en breves palabras que se trata del diseño e implementación de un prototipo, con el propósito de verificar que el concepto es susceptible de ser explotado de una manera útil.
+	
+	Nos hemos atrevido con una idea interesante, y a su vez desafiante, como resulta ser un sistema de monitorización del sistema cardiovascular en tiempo real, y usando unos recursos muy simples y al alcance de cualquiera, como son el uso de un pulsómetro comercial con Bluetooth integrado de última generación y un teléfono inteligente Android. Se ha desarrollado una aplicación Android, la cual recibirá datos transmitidos por el pulsómetro mediante el protocolo Bluetooth 4.0, en su modo de baja energía, y enviará dichos datos a un servidor web a través del método POST del protocolo HTTP.
+	
+	En este prototipo el término ``tiempo real'' es el aspecto clave, puesto que el objetivo es que cualquier persona (en un principio) sea capaz de ver inmediatamente reflejado en la web el último valor de frecuencia cardíaca detectado por el pulsómetro. En otras palabras, usted se encuentra realizando ejercicio en el exterior con el pulsómetro atado al pecho y con su teléfono móvil Android en el bolsillo, y cualquier persona interesada, por ejemplo un doctor, podría consultar en directo su ritmo cardiovascular y ver dicha evolución en una gráfica desde cualquier dispositivo móvil con acceso a Internet.
+	
+	Sin embargo, para tal propósito nos falta la otra pieza del puzzle para que todo encaje perfectamente: conexiones de baja latencia cliente-servidor y servidor-cliente, siendo el servidor un servidor web el cual implementaremos desde cero y tendremos total control sobre él, y cliente cualquier navegador web. ¿Se preguntan cómo conseguir dicha baja latencia? Los Web Sockets nos abren el camino.
+	
+	La figura \ref{figure:esquemaIntro} provee una visión general del sistema que se ha implementado.
+	
+	\begin{figure}[!htbp] \centering
+		\includegraphics[height=20cm]{graphs/esquemaIntroductorio.pdf}
+		\caption{Sistema de monitorización del ritmo cardíaco (visión general)}
+		\label{figure:esquemaIntro} 
+	\end{figure}
+    
+
+\sectionx{Motivación}
+    Entre los tecnólogos, la salud móvil está en auge. Según estudios del Instituto Tecnológico de Massachusetts, desde principios de 2013 se han invertido más de 550 millones de euros en capital riesgo en empresas para crear productos de salud móvil e invirtiendo en \tit{start-ups}.
+    
+    La idea es simple: cada vez hay más teléfonos inteligentes, lo que significa que el uso generalizado de sensores pequeños y baratos, Bluetooth de baja energía y software de análisis permitirán que pacientes y médicos registren todo tipo de datos para mejorar la atención médica.
+    
+    Con el lanzamiento de la versión 4.3 a mediados de 2013, Android introdujo la compatibilidad con Bluetooth 4.0 y su modo de baja energía. Esto hecho abrió la puerta a poder conectar sensores a aplicaciones Android, como por ejemplo medidores de frecuencia cardíaca, los cuales pueden adquirirse por un precio que ronda los 30-40 euros y proporcionan una alta precisión en la medida.
+    
+    La combinación de leer y almacenar datos de sensores en nuestro dispositivo Android, junto con un acceso completo a Internet desde este, nos garantiza un mundo lleno de posibilidades en el campo de la monitorización, poniendo esos datos a disponibilidad de un amplio público, todo ello en tiempo real gracias a la experiencia que la web nos brinda.
+\sectionx{Estado del arte}
+    La explosión  que el desarrollo web ha sufrido en los últimos años, proporcionando notables avances tecnológicos como NodeJS (JavaScript del lado del servidor), pilas o \tit{stacks} de desarrollo web completo como MEAN (usando Javascript cómo único lenguaje en todo la pila) e implementaciones de Web Sockets usando JavaScript y NodeJS, ha conseguido que podamos desarrollar ricas aplicaciones web en menor cantidad de tiempo y con una menor complejidad técnica.
+    
+    Por otra parte, la penetración de mercado de los teléfonos inteligentes crece día a día, superando 1.75 mil millones de usuarios para final de 2014\cite{smartphoneusers}. Como se observa en la tabla \ref{tab:mobileusage}, cerca de dos quintos de la base total de usuarios de teléfonos móviles, utiliza teléfonos móviles inteligentes. Esto supone cerca de un cuarto de la población mundial.
+
+\begin{table}[H]%
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    \hline
+    \tbf{}&\tbf{2012} &\tbf{2013}&\tbf{2014}&\tbf{2015}&\tbf{2016}&\tbf{2017}\\ \hline 
+    \tbf{\specialcell{ Usuarios totales \\ (miles de millones)}}&1.13&1.43&1.75&2.03&2.28&2.50 \\ \hline
+    \tbf{\% de incremento}&68.4\%&27.1\%&22.5\%&15.9\%&12.3\%&9.7\%\\ \hline
+    \tbf{\% de usuarios móviles}& 27.6\%&33.0\%&38.5\%&42.6\%&46.1\%&48.8\%\\ \hline
+    \tbf{\% de población mundial}&16.0\%&20.2\%&24.4\%&28.0\%&31.2\%&33.8\% \\ \hline
+    \hline 
+\end{tabular}
+\caption{Usuarios de teléfonos móviles inteligentes \cite{smartphoneusers}}\label{tab:mobileusage}
+\end{table} 
+
+    Dentro del segmento de usuarios de teléfonos móviles inteligentes, existen varios sistemas operativos móviles, cada cual provee su propia plataforma de desarrollo, entorno de desarrollo y ecosistema de aplicaciones. A raíz de la información de la tabla \ref{tab:mobimarketshare}, se observa que Android es el líder del mercado, con sobrada ventaja.
+
+ \begin{table}[H]%
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    \hline
+\tbf{Período}&\tbf{Android}&\tbf{iOS}&\tbf{Windows Phone}&\tbf{BlackBerry OS}&\tbf{Otros}\\
+\tbf{T3 2014}&84.4\%&11.7\%&2.9\%&0.5\%&0.6\%\\
+\tbf{T3 2013}&81.2\%&12.8\%&3.6\%&1.7\%&0.6\%\\
+\tbf{T3 2012}&74.9\%&14.4\%&2.0\%&4.1\%&4.5\%\\
+\tbf{T3 2011}&57.4\%&13.8\%&1.2\%&9.6\%&18.0\%\\
+\hline
+    \hline 
+    \end{tabular}
+\caption{Cuota de mercado de los distintos sistemas operativos móviles \cite{smartphonemarket}}\label{tab:mobimarketshare}
+\end{table} 
+    % situacion actual con relativo detalle 
+    
+\sectionx{Herramientas y metodologías utilizadas}
+Para el desarollo de la aplicación Android, la principal herramienta utilizada ha sido el entorno de desarrollo integrado Android Studio. Es un entorno de relativa novedad, ya que aunque su primera versión estable fue liberada en Diciembre de 2014, su desarrollo se remonta a Mayo de 2013. Android Studio está disponible de manera gratuita para las plataformas mayoritarias Windows, Mac OS X y Linux. Al ser un entorno de desarrollo enfocado completamente al ecosistema Android, provee múltiples ayudas y mejoras sobre un entorno de desarrollo integrado más genérico como puede ser Eclipse. Características que han hecho decantarse por Android Studio y no Eclipse se analizan en el apartado \ref{sec:IDE}.
+
+Para el desarrollo de la aplicación web, se ha recurrido al editor de texto gratuito y de código fuente abierto Atom.
+Es un entorno áltamente personalizable que explota lo mejor de los editores más populares del mercado.
+
+Ha sido necesario también un teléfono inteligente con Android, tanto durante la fase de desarrollo como durante las posteriores de utilización y realización de pruebas, así como un ordenador portátil Macbook Pro, actuando como servidor web durante la fase de desarrollo.
+
+\sectionx{Estructura del documento}
+
+\begin{description}
+
+\item[Introducción teórica]\hfill \\
+En el capítulo 1 se hará una introducción a los conceptos teóricos requeridos para la comprensión del trabajo realizado.
+Se explicará el protocolo Bluetooth y su versión de baja energía.
+A su vez, también se explicarán conceptos relativos a la programación en Android, tratados a lo largo del proyecto.
+Por último se realizará una breve introducción al desarrollo de aplicaciones web modernas, haciendo hincapié en el \tit{stack} MEAN, ya que ha sido el utilizado en el presente proyecto.
+
+\item[Implementación]\hfill \\
+En el capítulo 2 se explicará cómo se ha llevado a cabo toda la implementación de la aplicación, empezando por un análisis de los requisitos necesarios para la realización de esta, y siguiendo con los aspectos relevantes a la programación de la aplicación tanto Android como Web: métodos, interfaz gráfica, diagramas de flujo, algoritmos, etc.
+
+\item[Plan de pruebas y verificación] \hfill \\
+En el capítulo 3 se explicarán los procedimientos llevados a cabo para cerciorar el correcto funcionamiento de la aplicación.
+
+\item[Conclusiones y trabajo futuro] \hfill \\
+En este apartado se pretende representar las conclusiones obtenidas durante la realización de este proyecto, así como plasmar posibles ideas que se consideran interesantes de cara a una futura continuidad en el desarrollo de la aplicación.
+
+\end{description}
+
+
+\chapterend{}

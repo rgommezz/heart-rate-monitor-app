@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:	Parámetros de estilo
+% Autor:  Ignacio Moreno Doblas
+% Fecha:  2014-02-01
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tabla de materias:
+%--------------------%
+% 1 Márgenes de página
+%%%%%%%%%%%%%%%%%%%%%%%
+% Para conocer los parámetros de diseño de páginas, tales como
+%  los márgenes izquierdo, derecho, anchura de página, etc.
+%  véase el archivo ``Page layout.png'' que acompaña esta plantilla.
+% Así se conocerá mejor cómo adaptar el documento según los 
+%  requisitos del usuario.
+
+% 1 Márgenes de página
+%-------------------------------%
+% Parámetros de estilo de página.
+% DIN A4: 29.7 cm x 21 cm
+%		área neta: 3 cm + 3 cm + 15 cm.
+%
+% Definición de márgenes de página
+%  even para páginas pares
+%  odd  para páginas impares
+\newlength{\realoddsidemargin}	  % \oddsidemargin menos 1 in.
+\newlength{\realevensidemargin}		% \evensidemargin menos 1 in.
+\newlength{\realtopmargin}				% \topmargin menos 1 in.
+%
+% Asignación de márgenes de página
+% ASIGNESE en caso de querer cambiarlo
+\setlength{\realtopmargin}{2cm}			% REAL top margin.
+\setlength{\realoddsidemargin}{3cm}		% REAL oddside margin.
+\setlength{\realevensidemargin}{3cm}	% REAL evenside margin.
+\setlength{\hoffset}{0cm}
+\setlength{\voffset}{0cm}
+%
+% Substracción de 1 pulgada de compensación
+%  (véase ``Page Layout.png'' para más información)
+\addtolength{\realoddsidemargin}{-1in}	% 1 inch = 2.54 cm.
+\addtolength{\realevensidemargin}{-1in}
+\addtolength{\realtopmargin}{-1in}
+%
+% Asignación de anchuras y márgenes
+% No hay notas al margen
+\setlength{\marginparsep}{0cm} % No van a existir notas al margen
+\setlength{\marginparwidth}{0cm} % No van a existir notas al margen
+%
+% Asignación de anchura de texto
+\setlength{\textwidth}{15cm}	% Anchura neta del texto (globalmente).
+%
+% Asignación de márgenes par, impar y en altura
+\setlength{\oddsidemargin}{\realoddsidemargin}	% odd-page left margin (global).
+\setlength{\evensidemargin}{\realoddsidemargin}	% even-page left margin (global).
+\setlength{\topmargin}{\realtopmargin}					% top margin (Global).
+
+% Se puede usar también el paquete chngpage.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		1 Length commands.					%
+%-------------------------------%
+% Defines new length command (e.g., \newlength{\gnat}}
+%	\newlength{}
+%
+% Set lenght to a value.
+%	\setlength{\gnat}{length}
+%	\addtolength{}{}
+%
+% Sets the value of a length command equal to the width of a specified piece of text; e.g., \settowidth{\parindent}{\em small}.
+%	\settowidth{}{}
+% Set the value of a height. e.g., \settoheight{\parskip}{Gnu}
+%	\settoheight{}{}
+% Set the value that extends below the line. e.g., \settodepth{\parskip}{gnu}.
+%	\settodepth{}{}
+%
+% To multiply a length, write: 7.0\gnat = \gnat * 7.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,135 @@
+\begin{thebibliography}{{Esp}01}
+
+\bibitem[And07]{bluetoothhal}
+Android.
+\newblock ``{Android} open source {Bluetooth}'', {Junio} 2015. {Documento} en
+  formato {HTML} accesible por internet en la direcci{\'o}n:
+  \url{https://source.android.com/devices/bluetooth.html}, 2007.
+
+\bibitem[And08]{androiddevguide}
+Android.
+\newblock ``{Gu{\'\i}a} para desarrolladores en {Android}'', {Agosto} 2015.
+  {Documento} en formato {HTML} accesible por internet en la direcci{\'o}n:
+  \url{http://developer.android.com/}, 2008.
+
+\bibitem[Arg14]{bluetoothlowenergy}
+Argenox.
+\newblock ``{Introducci{\'o}n} al protocolo {Bluetooth} de bajo consumo'',
+  {Mayo} 2015. {Documento} en formato {HTML} accesible por internet en la
+  direcci{\'o}n:
+  \url{http://www.argenox.com/es/bluetooth-baja-energia-ble-desarrollo/biblioteca/introduction-bluetooth-bajo-consumo/},
+  2014.
+
+\bibitem[Dah09]{nodejs}
+Ryan Dahl.
+\newblock ``{P{\'a}gina} oficial de {NodeJS} en ingl{\'e}s'', {Enero} 2015.
+  {Documento} en formato {HTML} accesible por internet en la direcci{\'o}n:
+  \url{https://nodejs.org/}, 2009.
+
+\bibitem[Day14]{nodemongoangular}
+B.~Dayley.
+\newblock {\em Node.js, MongoDB, and AngularJS Web Development}.
+\newblock Addison-Wesley Professional, 1st edition, 2014.
+
+\bibitem[dV12]{codificacion}
+Universidad de~Valencia.
+\newblock ``{Teor{\'\i}a} de codificaci{\'o}n'', {Julio} 2015. {Documento} en
+  formato pdf accesible por internet en la direcci{\'o}n:
+  \url{http://www.uv.es/~hertz/hertz/Docencia/teoria/codificacion.pdf}, 2012.
+
+\bibitem[eMa14]{smartphoneusers}
+eMarketer.
+\newblock Smartphone users worldwide will total 1.75 billion in 2014.
+\newblock {\em eMarketer}, 2014.
+
+\bibitem[{Esp}01]{rae}
+Real~{Academia} {Espa{\~n}ola}.
+\newblock ``{Diccionario} de la lengua espa{\~n}ola'', {Vig{\'e}sima} segunda
+  edici{\'o}n (versi{\'o}n electr{\'o}nica consultable).
+\newblock \url{www.rae.es}, 2001.
+
+\bibitem[Exc08]{stackoverflow}
+Stack Exchange.
+\newblock ``{P{\'a}gina} para preguntas y respuestas de programadores'',
+  {Agosto} 2015. {Documento} en formato {HTML} accesible por internet en la
+  direcci{\'o}n: \url{http://stackoverflow.com/}, 2008.
+
+\bibitem[Exp11]{express}
+Express.
+\newblock ``{P{\'a}gina} oficial de {ExpressJS} en ingl{\'e}s'', {Julio} 2015.
+  {Documento} en formato {HTML} accesible por internet en la direcci{\'o}n:
+  \url{http://expressjs.com/}, 2011.
+
+\bibitem[Gir13]{android}
+J.~T. Giron{\'e}s.
+\newblock {\em El gran libro de Android}.
+\newblock marcombo, 3ª edition, 2013.
+
+\bibitem[Git08]{github}
+Github.
+\newblock ``{P{\'a}gina} oficial de {Github}'', {Agosto} 2015. {Documento} en
+  formato {HTML} accesible por internet en la direcci{\'o}n:
+  \url{https://github.com/}, 2008.
+
+\bibitem[Hav14]{meanweb}
+A.~Q. Haviv.
+\newblock {\em MEAN Web Development}.
+\newblock Packt Publishing, 1st edition, 2014.
+
+\bibitem[Her07]{heroku}
+Heroku.
+\newblock ``{P{\'a}gina} oficial de {Heroku}'', {Septiembre} 2015. {Documento}
+  en formato {HTML} accesible por internet en la direcci{\'o}n:
+  \url{https://www.heroku.com/}, 2007.
+
+\bibitem[Mon09]{mongodb}
+MongoDB.
+\newblock ``{P{\'a}gina} oficial de {MongoDB} en ingl{\'e}s'', {Mayo} 2015.
+  {Documento} en formato {HTML} accesible por internet en la direcci{\'o}n:
+  \url{https://www.mongodb.org/}, 2009.
+
+\bibitem[Pen14]{penflip}
+Penflip.
+\newblock ``{Introducci{\'o}n} a {MEAN}'', {Junio} 2015. {Documento} en formato
+  {HTML} accesible por internet en la direcci{\'o}n:
+  \url{https://www.penflip.com/ocruz/introduccion-a-mean/blob/master/mean.txt},
+  2014.
+
+\bibitem[RL14]{smartphonemarket}
+Kathy~Nagamine Ramon~Llamas, Ryan~Reith.
+\newblock Smartphone market share q3 2014.
+\newblock Technical report, IDC Corporate USA, 2014.
+
+\bibitem[SIG00]{bluetoothoficial}
+Bluetooth SIG.
+\newblock ``{P{\'a}gina} {Oficial} del {SIG} de {Bluetooth}'', {Septiembre}
+  2015. {Documento} en formato {HTML} accesible por internet en la
+  direcci{\'o}n: \url{https://www.bluetooth.org/}, 2000.
+
+\bibitem[Sim14a]{youdontknowjs}
+K.~Simpson.
+\newblock {\em You Don't Know JS: Scope \& Closures}.
+\newblock O'Reilly Media, Inc., 1st edition, 2014.
+
+\bibitem[Sim14b]{thisObject}
+K.~Simpson.
+\newblock {\em You Don't Know JS: this \& Object Prototypes}.
+\newblock O'Reilly Media, Inc., 1st edition, 2014.
+
+\bibitem[Sim15a]{typesGrammar}
+K.~Simpson.
+\newblock {\em You Don't Know JS: Types \& Grammar}.
+\newblock O'Reilly Media, Inc., 1st edition, 2015.
+
+\bibitem[Sim15b]{upgoing}
+K.~Simpson.
+\newblock {\em You Don't Know JS: Up \& Going}.
+\newblock O'Reilly Media, Inc., 1st edition, 2015.
+
+\bibitem[Wik04]{wikibluetooth}
+Wikipedia.
+\newblock ``{P{\'a}gina} de {Bluetooth} en {Wikipedia}'', {Septiembre} 2015.
+  {Documento} en formato {HTML} accesible por internet en la direcci{\'o}n:
+  \url{https://es.wikipedia.org/wiki/Bluetooth}, 2004.
+
+\end{thebibliography}

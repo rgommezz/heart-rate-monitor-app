@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:		Bibliografía
+% Autor:  	Ignacio Moreno Doblas
+% Fecha:  	2014-02-01
+% Versión:	0.5.0
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Encabezamiento %
+\pagestyle{fancy}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{Bibliografía}
+%\fancyhead[RE]{Parte \thepart \rightmark} %
+\fancyhead[RE]{\nouppercase{\rightmark}} %
+
+%Inclusión de bibliografía%
+\bibliography{Bibliografia} %Úsese el nombre del fichero sin extensión
+
+%Inclusión en el índice (Tabla de contenidos)
+\addcontentsline{toc}{chapter}{Referencias}
+
+%Formateo de estilo de bibliografía
+% Otros formatos: plain, unsrt, abbrv
+%  plain: las entradas se ordenan alfabéticamente y se etiquetan con un número (p.ej., [1])
+% unsrt: igual que plain, pero aparecen en orden de citación.
+% alpha: el etiquetado se hace por autor y año de publicación (p.ej., [Knu66]).
+% abbrv: igual que alpha, pero más abreviado.
+\bibliographystyle{alpha}
+
+%Impresión de todas las entradas bibliográficas
+\nocite{*}
+
+\chapterend

@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Documento LaTeX 																						%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Título:	Entornos
+% Autor:  Ignacio Moreno Doblas
+% Fecha:  2014-02-01
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tabla de materias:
+%--------------------%
+% 1 dobleindent
+% 2 izqindent
+% 3 dobleindentx
+% 4 ite
+% 5 descript
+% 6 enu
+% 7 itemization
+% 8 sinopsis
+%%%%%%%%%%%%%%%%%%%%%%%
+% Para conocer los parámetros de diseño de las listas, tales como
+%  los márgenes izquierdo, derechos y los diferentes saltos,
+%  véase el archivo ``List layout.png'' que acompaña esta plantilla.
+% Así se conocerá mejor cómo adaptar un entorno según los requisitos 
+%  del usuario.
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% Definición de longitudes para usar en los entornos:
+%
+% Normal parskip.
+\newlength{\parskipenv}
+\setlength{\parskipenv}{\parskip}
+
+\newlength{\parindentenv}
+\setlength{\parindentenv}{\parindent}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% 1 dobleindent
+%El entorno dobleindent está pensando para escribir párrafos con doble indentación a cada lado.
+%Tiene dos parámetros de entrada con las distancias medidas desde los márgenes de página.
+
+\newenvironment{dobleindent}[2]
+	%Comienzo de nuevo entorno%
+	{
+	\begin{list}
+		{}
+		{
+		% Left and right margins:
+		\leftmargin = #1 
+		\rightmargin = #2
+		%
+		% Separation from preceding and following text:
+		\topsep = 0ex
+		\partopsep = 0ex
+		\parsep = \parskipenv
+		%
+		% Indentation for paragraphs:
+		\itemsep = \parskipenv
+		\itemindent = \parindentenv
+		\listparindent = \itemindent
+		%
+		% Horizontal separation from label:
+		\labelsep = 1ex
+		\settowidth{\labelwidth}{0cm}
+		}
+		
+		 \item}
+	% End new env
+	{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2 izqindent
+% El entorno izqindent sólo crea un párrafo indentado a la izquierda.
+\newenvironment{izqindent}[1]
+{
+\begin{dobleindent}{#1}{0cm}
+}
+{
+\end{dobleindent}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3 dobleindentx
+% El entorno dobleindentx es una variación del dobleindent usando leftskip y rightskip.
+% Aunque es más limitado, también se puede usar.
+\newenvironment{dobleindentx}[2] % Sólo funciona en modo paragraph
+{ % Preamble
+  \leftskip = #1
+  \rightskip = #2
+}
+{ % Postamble
+\leftskip = 0cm
+\rightskip = 0cm
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 4 ite
+% El entorno ite es una modificación del entorno itemize estándar de \LaTeX. Puede usarse o modificarse si el usuario lo desea.
+% También puede parametrizarse el entorno enumerate o description de forma equivalente.
+\newenvironment{ite}
+	{
+		\begin{izqindent}{\parindent}
+		\hspace{-\parindent} 	% compensación del sangrado que introduce el entorno.
+		\vspace{-1.0\parskip}	% compensación del \parskip que introduce el entorno.
+		\vspace{-\baselineskip}	% compensación por la línea que introduce el entorno.
+		\begin{itemize}
+	}
+	{
+		\end{itemize}
+		\end{izqindent}
+	}
+
+%%%%%%%%%%%%%%%%%%%%%5
+% commando stdformat para formatear los entornos descript, enu y itemization.
+\newcommand{\stdformat}
+	{% Declarations for format presentation.
+		%		  
+		% Separation from preceding and following text:
+		\setlength{\topsep}{0ex}%
+		\setlength{\partopsep}{0ex} %
+		%
+		% Horizontal separation from label:
+		\labelsep = 1ex
+		\setlength{\labelwidth}{0ex}
+		%
+		%	Left and right margins:	
+		\setlength{\leftmargin}{1cm}%
+		\addtolength{\leftmargin}{\labelsep}
+		\setlength{\rightmargin}{0ex}
+		%  
+		% Indentation for paragraphs:
+		\setlength{\itemindent}{-\leftmargin}%
+		\addtolength{\itemindent}{1ex}
+		\setlength{\listparindent}{\parindent}%
+		%		
+		% Separation between paragraphs.
+		\setlength{\parsep}{\parskipenv}% 
+		\setlength{\itemsep}{1ex}
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 5 descript
+
+\newenvironment{descript}
+	% Beginning new env def.
+	{
+		\begin{list}
+			{} % No default label for \item.
+			{
+				% Declarations for format presentation.
+				\stdformat
+				%
+				\renewcommand{\makelabel}[1]{\normalfont\bfseries##1\hfil}
+			}
+	}
+	% Ending new env def.
+	{
+		\hspace*{\fill} \\ \end{list}
+	} % Se introduce un salto de línea para que el texto siguiente esté separado.
+%END newenvironment{descript}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 6 enu
+\newcounter{itemnumber} % Counter for the environment.
+
+\newenvironment{enu}
+	% Beginning new env def.
+	{
+		\begin{list}
+		{
+			\raggedleft \arabic{itemnumber}
+		}
+		{
+			\usecounter{itemnumber}
+			\stdformat
+		}
+	}
+	{
+		\end{list}
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 7 itemization
+\newenvironment{itemization}
+	% Beginning new env def.
+	{
+		\begin{list}
+			{$\bullet$} % No default label for \item.
+			{
+				% Declarations for format presentation.
+				\stdformat
+			}
+	}
+	% Ending new env def.
+	{
+		\end{list}
+	}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 8 sinopsis
+\newenvironment{sinopsis}{%[1]{
+	\sectiony{Sinopsis}
+	%\label{#1}
+} {
+	\pagebreak
+}
