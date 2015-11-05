@@ -29,5 +29,6 @@ Full documentation is available together with LaTeX source (in spanish) under `/
 ![alt text](https://github.com/rauliyohmc/heart-rate-monitor-app/blob/master/doc/graphs/AndroidConectado.png)
 ![alt text](https://github.com/rauliyohmc/heart-rate-monitor-app/blob/master/doc/graphs/AndroidEmitiendo2.png)
 ![alt text](https://github.com/rauliyohmc/heart-rate-monitor-app/blob/master/doc/graphs/AndroidNotificaciones.png)
+![alt text](https://github.com/rauliyohmc/heart-rate-monitor-app/blob/master/doc/graphs/AndroidMapas.png)
 ![alt text](https://github.com/rauliyohmc/heart-rate-monitor-app/blob/master/doc/graphs/webDB.png)
 
