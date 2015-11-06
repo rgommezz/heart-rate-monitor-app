@@ -7,7 +7,7 @@ The web server will communicate with the browser via Web Socket connection so as
 
 The web client will be able to monitor those values as well as showing a graph with the latest heart rate samples. It will also allow the user to view the current location of the person being monitored.
 
-Notification system included to notifiy via email when certain heart rate conditions take place.
+Notification system included to notify via email when certain heart rate conditions take place.
 
 MongoDB implemented to store every heart rate sample received and hence making possible data mining.
 
