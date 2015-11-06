@@ -1,7 +1,7 @@
 # heart-rate-monitor
 Master Thesis project, a heart rate monitoring system, composed of an Android and Web applications working together as a whole.
 
-The Android application acts as a bridge, providing an interface to connect your personal heart rate commercial sensor through Bluetooth 4.0 Low Energy. The application will receive data from the sensor and will parse it appropiately, in order to transfer it to a web server by HTTP POST requests. It will also send location information periodically to track down the user.
+The Android application acts as a bridge, providing an interface to connect your personal heart rate commercial sensor through Bluetooth 4.0 Low Energy. The application will receive data from the sensor and will parse it appropriately, in order to transfer it to a web server by HTTP POST requests. It will also send location information periodically to track down the user.
 
 The web server will communicate with the browser via Web Socket connection so as to send real-time heart rate and location values.
 
